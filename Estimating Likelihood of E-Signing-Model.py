@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Churn Minimization by Analyzing financial Data - MODEL
+Estimating Likelihood of E-Signing - MODEL
 """
 
 import pandas as pd
