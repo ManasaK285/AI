@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Churn Rate Minimization by Analyzing Financial Data- Usecase
+Estimating Likelihood of E-Signing - EDA
 """
 ###Importing Libraries
 import pandas as pd
