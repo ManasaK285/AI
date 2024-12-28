@@ -1,0 +1,13 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+install.packages("tidymodels")
+library(tidymodels)
+student <- data.table::fread("/kaggle/input/student-admission-records/student_admission_record_dirty.csv") |> 
+    janitor::clean_names() |> 
+    mutate_if(
+      is.character, 
+      ~as.factor(if_else(. == "", NA, .))
+    ) |> 
+    tidytable::as_tidytable()
